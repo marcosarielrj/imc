@@ -62,81 +62,30 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros.</p>
-          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
-          <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Peso</label>
-                <input type="text" class="form-control" placeholder="Peso" id="peso" required data-validation-required-message="Digite o Seu Peso.">
-                <p class="help-block text-danger"></p>
-              </div>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="peso">Kg</span>
+              <input type="text" class="form-control" placeholder="Peso" aria-label="Peso" aria-describedby="sizing-addon1">
             </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Altura</label>
-                <input type="email" class="form-control" placeholder="Altura" id="altura" required data-validation-required-message="Digite Sua Altura.">
-                <p class="help-block text-danger"></p>
-              </div>
+            <br>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="altura">m²</span>
+              <input type="text" class="form-control" placeholder="Altura" aria-label="Altura" aria-describedby="sizing-addon2">
             </div>
-            <!--<div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>-->
             <br>
             <div id="success"></div>
             <div class="form-group">
-              <button type="submit" class="btn btn-secondary" id="sendMessageButton">Send</button>
+              <button type="submit" class="btn btn-secondary" id="sendMessageButton">Calcular</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <hr>
-
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
             <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
           </div>
         </div>
