@@ -22,17 +22,6 @@
     <link href="css/clean-blog.min.css" rel="stylesheet">
     <script type=”text/javascript”> 
 
-      var peso = document.getElementById('peso');
-      var peso1 = input-group.peso.value;
-      
-      form.addEventListener('submit', function(e) {
-        // alerta o valor do campo
-        alert(peso.value);
-    
-        // impede o envio do form
-        e.preventDefault();
-    });
-      alert("Teste");
       
     </script>
   </head>
@@ -42,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Calculo do IMC</a>
+        <a class="navbar-brand" href="index.html" style="color: black">Calculo do IMC</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -50,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html" style="color: black">Home</a>
             </li>
           </ul>
         </div>
@@ -63,8 +52,8 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>Calculo do IMC</h1>
-              <span class="subheading">A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</span>
+              <h1 style="color: black">Calculo do IMC</h1>
+              <span class="subheading" style="color: black">A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</span>
             </div>
           </div>
         </div>
@@ -86,14 +75,29 @@
               <input type="text" class="form-control" placeholder="Altura" aria-label="Altura" aria-describedby="sizing-addon2">
             </div>
             <br>
-            <div id="success"></div>
             <div class="form-group">
-              <button type="submit" class="btn btn-secondary" id="sendMessageButton">Calcular</button>
+              <button type="submit" class="btn btn-secondary" id="calcular">Calcular</button>
+            </div>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon" id="resultado">Resultado</span>
+              <input type="text" class="form-control" placeholder="" aria-label="Altura" aria-describedby="sizing-addon2">
             </div>
           </form>
         </div>
       </div>
     </div>
+
+    <header class="masthead" style="background-color: white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <img src = "img\tabela-imc.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Footer -->
     <footer>
