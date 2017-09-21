@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Calculo do IMC</title>
 
     <!-- Bootstrap core CSS -->
@@ -21,9 +23,19 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-    <script type=”text/javascript”>
-      var name = $("input#name").val();
-            var email = $("input#email").val();
+    
+    <script>
+      
+      function calcularimc(){
+        
+        var peso = $("input#peso").val();
+        var altura = $("input#altura").val();
+        var imc = peso / (altura*altura);
+        $('#resultado').html(imc);
+        $("input#peso").val("");
+        $("input#altura").val("");
+        console.log(imc);
+      }
     </script>
   </head>
 
@@ -68,22 +80,22 @@
               <form name="CalcularIMC" id="calcimc">
                 <div class="control-group">
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="peso">Kg</span>
-                    <input type="text" class="form-control" placeholder="Peso">
+                    <span class="input-group-addon" >Kg</span>
+                    <input type="text" class="form-control" placeholder="Peso" id="peso">
                   </div>
                   <br>
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="altura">m²</span>
-                    <input type="text" class="form-control" placeholder="Altura">
+                    <span class="input-group-addon" >m²</span>
+                    <input type="text" class="form-control" placeholder="Altura" id="altura">
                     <p class="help-block text-danger"></p>
                   </div>
                   <br>
                   <div class="form-group">
-                    <button type="submit" class="btn btn-secondary" id="calcular">Calcular</button>
+                    <button type="submit" class="btn btn-secondary" id="calcular" onclick="calcularimc() ; return false">Calcular</button>
                   </div>
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="resultado">Resultado</span>
-                    <input type="text" class="form-control" placeholder="">
+                    <span class="input-group-addon">Resultado</span>
+                    <h1 type="show" class="form-control" placeholder="" id="resultado" style ="font-size: 1.5em">
                   </div>
               </form>
               </div>
