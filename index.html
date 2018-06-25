@@ -29,7 +29,7 @@
       function calcularimc(){
         
         var peso = $("input#peso").val();
-        var altura = $("input#altura").val();
+        var altura = $("input#altura").val().replace(",",".");
         var imc = peso / (altura*altura);
         $('#resultado').html(imc);
         $("input#peso").val("");
