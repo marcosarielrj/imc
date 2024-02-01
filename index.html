@@ -36,28 +36,28 @@
 
         if(op == "+"){
 
-          imc = Number(num1) + Number(num2;
+          imc = parseFloat(num1) + parseFloat(num2;
           $('#resultado').html(imc);
           $("input#peso").val("");
           $("input#altura").val("");
         }
         if(op == "-"){
 
-          imc = num1 - num2;
+          imc = parseFloat(num1) - parseFloat(num2);
           $('#resultado').html(imc);
           $("input#peso").val("");
           $("input#altura").val("");
         }
         if(op == "*"){
           
-          imc = num1 * num2;
+          imc = parseFloat(num1) * parseFloat(num2);
           $('#resultado').html(imc);
           $("input#peso").val("");
           $("input#altura").val("");
         }
         if(op == "/"){
           
-          imc = num1 / num2;
+          imc = parseFloat(num1) / parseFloat(num2);
           $('#resultado').html(imc);
           $("input#peso").val("");
           $("input#altura").val("");
