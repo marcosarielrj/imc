@@ -29,13 +29,39 @@
       
       function calcularimc(){
         
-        var peso = $("input#peso").val();
-        var altura = $("input#altura").val().replace(",",".");
-        var imc = peso / (altura*altura);
-        $('#resultado').html(imc);
-        $("input#peso").val("");
-        $("input#altura").val("");
-        console.log(imc);
+        var num1 = $("input#num1").val();
+        var num2 = $("input#num2").val().replace(",",".");
+        var op = $("input#op").val();
+        var imc;
+
+        if(op == "+"){
+
+          imc = num1 + num2;
+          $('#resultado').html(imc);
+          $("input#peso").val("");
+          $("input#altura").val("");
+        }
+        if(op == "-"){
+
+          imc = num1 - num2;
+          $('#resultado').html(imc);
+          $("input#peso").val("");
+          $("input#altura").val("");
+        }
+        if(op == "*"){
+          
+          imc = num1 * num2;
+          $('#resultado').html(imc);
+          $("input#peso").val("");
+          $("input#altura").val("");
+        }
+        if(op == "/"){
+          
+          imc = num1 / num2;
+          $('#resultado').html(imc);
+          $("input#peso").val("");
+          $("input#altura").val("");
+        }
       }
     </script>
   </head>
@@ -81,13 +107,19 @@
               <form name="CalcularIMC" id="calcimc">
                 <div class="control-group">
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" >Kg</span>
-                    <input type="text" class="form-control" placeholder="Peso" id="peso">
+                    <span class="input-group-addon" >Num 1</span>
+                    <input type="text" class="form-control" placeholder="Num 1" id="num1">
                   </div>
                   <br>
                   <div class="input-group input-group-lg">
-                    <span class="input-group-addon" >m²</span>
-                    <input type="text" class="form-control" placeholder="Altura" id="altura">
+                    <span class="input-group-addon" >Num 2</span>
+                    <input type="text" class="form-control" placeholder="Num 2" id="num2">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <br>
+                   <div class="input-group input-group-lg">
+                    <span class="input-group-addon" >Oper. </span>
+                    <input type="text" class="form-control" placeholder="Altura" id="op">
                     <p class="help-block text-danger"></p>
                   </div>
                   <br>
